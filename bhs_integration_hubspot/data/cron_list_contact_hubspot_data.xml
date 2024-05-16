@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="1">
+        <record id="ir_cron_list_contact_hubspot_odoo" model="ir.cron">
+            <field name="name">Hubspot: List Contact Daily</field>
+            <field name="model_id" ref="mass_mailing.model_mailing_list"/>
+            <field name="state">code</field>
+            <field name="code">model.sync_list_contact_hubspot_odoo_daily(1)</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="nextcall" eval="DateTime.now().replace(hour=18, minute=0)"/>
+        </record>
+
+        <record id="ir_cron_syn_lists_hubspot_odoo" model="ir.cron">
+            <field name="name">Hubspot: Syn Lists</field>
+            <field name="model_id" ref="mass_mailing.model_mailing_list"/>
+            <field name="state">code</field>
+            <field name="active">False</field>
+            <field name="code">model.sync_list_hubspot_odoo()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="nextcall" eval="DateTime.now().replace(hour=17, minute=0)"/>
+        </record>
+
+        <record id="ir_cron_syn_lists_remove_hubspot_odoo" model="ir.cron">
+            <field name="name">Hubspot: Syn Lists removed in hubspot to odoo</field>
+            <field name="model_id" ref="mass_mailing.model_mailing_list"/>
+            <field name="state">code</field>
+            <field name="active">False</field>
+            <field name="code">model.sync_list_remove_hubspot_odoo()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="nextcall" eval="DateTime.now().replace(hour=20, minute=0)"/>
+        </record>
+
+        <record id="ir_cron_syn_contacts_by_list_hubspot_odoo" model="ir.cron">
+            <field name="name">Hubspot: Syn Contact by List ID</field>
+            <field name="model_id" ref="mass_mailing.model_mailing_list"/>
+            <field name="state">code</field>
+            <field name="active">False</field>
+            <field name="code">model.sync_contacts_by_list_hubspot_odoo(0)</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="nextcall" eval="DateTime.now().replace(hour=17, minute=0)"/>
+        </record>
+
+        <record id="ir_cron_sync_deleted_contact_hubspot_odoo" model="ir.cron">
+            <field name="name">Hubspot: Delete Archived Contact Hubspot on Odoo</field>
+            <field name="model_id" ref="mass_mailing.model_mailing_list"/>
+            <field name="state">code</field>
+            <field name="code">model.sync_deleted_contact_hubspot_odoo()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="nextcall" eval="DateTime.now().replace(hour=21, minute=0)"/>
+        </record>
+    </data>
+</odoo>

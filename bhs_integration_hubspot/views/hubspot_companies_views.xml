@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!--  MAILING !-->
+        <record model="ir.ui.view" id="bhs_hubspot_companies_view_tree">
+            <field name="name">bhs.hubspot.companies.view.tree</field>
+            <field name="mode">primary</field>
+            <field name="model">hubspot.companies</field>
+            <field name="arch" type="xml">
+                <tree string="Hubspot companies" create="0" delete="0" edit="0">
+                    <field name="id_companies_hubspot" optional="hide"/>
+                    <field name="name"/>
+                    <field name="domain" optional="show"/>
+                    <field name="website" optional="hide"/>
+                    <field name="numberofemployees" optional="show"/>
+                    <field name="country" optional="hide"/>
+                    <field name="state" optional="hide"/>
+                    <field name="city" optional="hide"/>
+                    <field name="description" optional="hide"/>
+                    <field name="phone" optional="hide"/>
+                    <field name="linkedin_company_page" optional="hide" widget="url"/>
+                    <field name="industry_name"/>
+                    <field name="contacts_related" widget="many2many_tags" optional="hide"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="bhs_hubspot_companies_view_form">
+            <field name="name">bhs.hubspot.companies.view.form</field>
+            <field name="mode">primary</field>
+            <field name="model">hubspot.companies</field>
+            <field name="arch" type="xml">
+                <form string="Hubspot companies" create="0" delete="0" edit="0">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="id_companies_hubspot"/>
+                                <field name="name"/>
+                                <field name="domain"/>
+                                <field name="industry_name"/>
+                                <field name="phone"/>
+                                <field name="numberofemployees"/>
+                            </group>
+                            <group>
+                                <field name="country"/>
+                                <field name="state"/>
+                                <field name="city"/>
+                                <field name="description"/>
+                                <field name="linkedin_company_page" widget="url"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Mailing contacts">
+                                <field name="contacts_related"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_bhs_hubspot_companies_view">
+            <field name="name">Hubspot companies</field>
+            <field name="res_model">hubspot.companies</field>
+            <field name="view_mode">tree,form</field>
+      </record>
+
+      <menuitem id="menu_bhs_hubspot_synchronize" name="Hubspot Synchronize" parent="mass_mailing.mass_mailing_menu_root" sequence="2"/>
+      <menuitem id="menu_bhs_hubspot_companies" name="Hubspot companies" parent="menu_bhs_hubspot_synchronize" sequence="1" action="act_bhs_hubspot_companies_view"/>
+
+
+</odoo>

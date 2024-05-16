@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hubspot_companies_mass_mailing_user,access.hubspot.companies.mass.mailing.user,bhs_integration_hubspot.model_hubspot_companies,mass_mailing.group_mass_mailing_user,1,1,1,1

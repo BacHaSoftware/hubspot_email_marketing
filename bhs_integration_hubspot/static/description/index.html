@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div class="container" style="padding: 1rem !important; margin-bottom: 1rem !important;">
+    <div class="row" style="border-bottom: 1px solid #d5d5d5;">
+        <div class="col-sm-8 col-md-8 col-lg-8 d-flex justify-content-between">
+            <div>
+                <img src="./imgs/logo.png" style="width: auto !important;height: 86px !important;">
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 text-end">
+                <div class="mt-3 text-end" style="font-size: 18px;">
+                    <b>TOP SOFTWARE COMPANY IN VIETNAM</b>
+                    <div>hello@bachasoftware.com</div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="padding: 0rem 1.5rem 0rem 1.5rem;">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 4rem 3rem !important;">
+            <h2 style="font-weight: 700; font-size: 36px; text-align: center;">
+                Hubspot Integration
+            </h2>
+            <p style="font-weight: 400; font-size: 18px; text-align: center;">
+                A product of Bac Ha Software allows to Synchronized data between Hubspot and Odoo,
+                provides comprehensive solutions to email marketing and related problems.
+            </p>
+            <img src="banner.gif" class="img img-fluid mx-auto img-thumbnail" style="height:350px;">
+
+            <div style="padding-top: 5rem" class="w3-panel w3-card w3-light-grey">
+                <h2 style="text-align: center;"><span style="font-weight: 700; font-size: 28px; color: #FF8000;">
+                    Set up
+                </span></h2>
+                <span style="font-weight: 400; font-size: 18px">
+                    Before installing this module, you need to install libraries
+                    <b>simplejson, hubspot, hubspot-api-client, boto3 :</b>
+                </span><br/>
+                <code style="font-weight: 400; font-size: 18px; background-color: #f1f1f1;">pip3 install simplejson</code><br>
+                <code style="font-weight: 400; font-size: 18px; background-color: #f1f1f1;">pip3 install hubspot</code><br>
+                <code style="font-weight: 400; font-size: 18px; background-color: #f1f1f1;">pip3 install hubspot-api-client</code><br>
+                <code style="font-weight: 400; font-size: 18px; background-color: #f1f1f1;">pip3 install boto3</code><br>
+                <p style="font-weight: 400; font-size: 18px">And this module also depends on our other module:
+                    <b>Mass Mailing</b> <i>(bhs_mass_mailing)</i></a>
+                </p>
+            </div>
+
+            <section class="oe_container" style="padding-top: 6rem">
+                <h2 style="text-align: center;"><span style="font-weight: 700; font-size: 28px; color: #FF8000;">
+                    Featured Highlight
+                </span></h2>
+
+                <div style="padding-top: 3rem;" class="row">
+                    <div class="col-md-6 text-center">
+                        <p style="font-weight: 700; font-size: 22px; text-align: center">Data Synchronization</p>
+                        <p style="font-weight: 400; font-size: 18px">
+                            Hubspot data and odoo mailing contacts are synchronized daily.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p style="font-weight: 700; font-size: 22px; text-align: center">Simple Setup</p>
+                        <p style="font-weight: 400; font-size: 18px">
+                            After install module, just need to input HubSpot API Key at General Settings.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="oe_container pt-5">
+                <h2 style="text-align: center;"><span style="font-weight: 700; font-size: 28px; color: #FF8000;">
+                    Key Features
+                </span></h2>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <img src="./imgs/screen/company.png" class="img img-fluid mx-auto img-thumbnail" style="width: 75%; float: right"/>
+                    </div>
+                    <div class="col-lg-6 pt16 pb16 o_colored_level" style="width: 40%">
+                        <p style="font-weight: 700; font-size: 24px; text-align: center">Hubspot Contact And Companies</p>
+                        <p style="font-size: 18px;">
+                            Synchronize contact and company data between Hubspot and Odoo daily.
+                            Synchronized data includes: name, city, state, country, industry...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <div style="width: 80%; float: right">
+                            <p style="font-weight: 700; font-size: 24px; text-align: center">Add To Blacklist</p>
+                            <p style="font-size: 18px;">
+                                Automatically add to email blacklist Suppressed emails on SES
+                                and delete their mailing contacts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <img src="./imgs/screen/blacklist.png" class="img img-fluid mx-auto img-thumbnail" style="width: 75%; float: left">
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <img src="./imgs/screen/hubspot.png" class="img img-fluid mx-auto img-thumbnail" style="width: 75%; float: right"/>
+                    </div>
+                    <div class="col-lg-6 pt16 pb16 o_colored_level" style="width: 40%">
+                        <p style="font-weight: 700; font-size: 24px; text-align: center">Update Unqualified Contacts On Hubspot</p>
+                        <p style="font-size: 18px;">
+                            Automatically update contacts on hubspot to UNQUALIFIED when they are blacklist on Odoo
+                            (run schedule action once a day, after retrieve BOUNCE and COMPLAIN emails
+                            from SES and add to mail blacklist).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <div style="width: 80%; float: right">
+                            <p style="font-weight: 700; font-size: 24px; text-align: center">Mailing Contact Features</p>
+                            <p style="font-size: 18px;">
+                                Block duplicate mailing contacts, import mailing contact data into mailing list,
+                                add to blacklist feature.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <img src="./imgs/screen/contact.png" class="img img-fluid mx-auto img-thumbnail" style="width: 75%; float: left">
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <img src="./imgs/screen/domain.png" class="img img-fluid mx-auto img-thumbnail" style="width: 75%; float: right"/>
+                    </div>
+                    <div class="col-lg-6 pt16 pb16 o_colored_level" style="width: 40%">
+                        <p style="font-weight: 700; font-size: 24px; text-align: center">Blacklist Domain</p>
+                        <p style="font-size: 18px;">
+                            Add model to record blacklist domains.
+                            Block import emails belonging to blacklist domains (edu,gov,org,....).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <div style="width: 80%; float: right">
+                            <p style="font-weight: 700; font-size: 24px; text-align: center">Add And Remove From Old List</p>
+                            <p style="font-size: 18px;">
+                                Add mailing contacts to a list and delete them from their old lists.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <img src="./imgs/screen/list.png" class="img img-fluid mx-auto img-thumbnail" style="width: 75%; float: left">
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <img src="./imgs/screen/contacted.png" class="img img-fluid mx-auto img-thumbnail" style="width: 75%; float: right"/>
+                    </div>
+                    <div class="col-lg-6 pt16 pb16 o_colored_level" style="width: 40%">
+                        <p style="font-weight: 700; font-size: 24px; text-align: center">Mailing Contact Contacted</p>
+                        <p style="font-size: 18px;">
+                            Record mailing contacts that no longer want to change their mailing list
+                            (example: current customers). The last purpose is to no longer send marketing emails
+                            to these mailing contacts.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="oe_container pt-5">
+                <h2 style="text-align: center;"><span style="font-weight: 700; font-size: 28px; color: #FF8000;">
+                    Other Modules
+                </span></h2>
+
+                <div class="container mt-5">
+                    <div class="row my-3">
+                        <div class="col-md-4">
+                            <a href="https://apps.odoo.com/apps/modules/17.0/bhs_customer_invoice_management/" target="_blank">
+                                <div style="border-radius:10px" class="shadow-sm">
+                                    <img src="./imgs/other_module/customer_invoice_management.gif" class="img-fluid" />
+                                    <h4 class="mt0 text-truncate"
+                                        style="padding:6% 4%;  text-align:center; width:100%; font-weight:bold">
+                                        Customer Invoice Management
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4">
+                            <a href="https://apps.odoo.com/apps/modules/17.0/bhs_password_policy/" target="_blank">
+                                <div style="border-radius:10px" class="shadow-sm">
+                                    <img src="./imgs/other_module/password_policy.gif" class="img-fluid"/>
+                                    <h4 class="mt0 text-truncate"
+                                        style="padding:6% 4%;  text-align:center; width:100%; font-weight:bold">
+                                        Password Policy
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4">
+                            <a href="https://apps.odoo.com/apps/modules/17.0/bhs_sales_invoice/" target="_blank">
+                                <div style="border-radius:10px" class="shadow-sm">
+                                    <img src="./imgs/other_module/sale_invoice.gif" class="img-fluid"/>
+                                    <h4 class="mt0 text-truncate"
+                                        style="padding:6% 4%;  text-align:center; width:100%; font-weight:bold">
+                                        Sales to invoice
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row my-3">
+                        <div class="col-md-4">
+                            <a href="https://apps.odoo.com/apps/modules/17.0/bhs_mail_domain/" target="_blank">
+                                <div style="border-radius:10px" class="shadow-sm">
+                                    <img src="./imgs/other_module/mail_domain.gif" class="img-fluid" />
+                                    <h4 class="mt0 text-truncate"
+                                        style="padding:6% 4%;  text-align:center; width:100%; font-weight:bold">
+                                        Mail Domain
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4">
+                            <a href="https://apps.odoo.com/apps/modules/17.0/bhs_odoo_slack/" target="_blank">
+                                <div style="border-radius:10px" class="shadow-sm">
+                                    <img src="./imgs/other_module/slack_connector.gif" class="img-fluid"/>
+                                    <h4 class="mt0 text-truncate"
+                                        style="padding:6% 4%;  text-align:center; width:100%; font-weight:bold">
+                                       Slack Connector
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4">
+                            <a href="https://apps.odoo.com/apps/modules/17.0/bhs_aws_ses_mail_tracking/" target="_blank">
+                                <div style="border-radius:10px" class="shadow-sm">
+                                    <img src="./imgs/other_module/aws_ses_mail_tracking.gif" class="img-fluid"/>
+                                    <h4 class="mt0 text-truncate"
+                                        style="padding:6% 4%;  text-align:center; width:100%; font-weight:bold">
+                                        AWS SES Mail Tracking
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-12">
+                            <a href="https://apps.odoo.com/apps/modules/browse?author=Bac%20Ha%20Software" target="_blank">
+                                <h4 class="mt0 text-truncate py-3 text-end">
+                                        <span class="blink_me" style="font-weight: 700; font-size: 24px; color: #FF8000;">
+                                            See more of our modules
+                                        </span>
+                                </h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="oe_container pt-5">
+                <div style="padding: 2rem 2rem 2rem 2rem; background-color: #5FB645; color: white!important;">
+                    <h2 style="text-align: center; font-weight: 700; font-size: 28px; color: white">
+                        Need Help?
+                    </h2>
+                    <p style="font-size: 18px; font-weight: 400; text-align: center">
+                        Need assistance with setup or have any concerns?
+                        Contact Bac Ha Software directly for prompt and dedicated support:
+                    </p>
+
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16 o_colored_level" style="width: 50%">
+                            <img src="./imgs/mail.png" class="img img-fluid mx-auto"/>
+                            <p style="font-weight: 400; font-size: 18px; text-align: center; margin-bottom: 0; margin-top: 1rem;">Drop us a message:</p>
+                            <p style="font-weight: 700; font-size: 18px; text-align: center"><a href="mailto:odoo@bachasoftware.com" style="color: white" target="_blank" rel="noreferrer">odoo@bachasoftware.com</a></p>
+                        </div>
+                        <div class="col-lg-6 pt16 pb16 o_colored_level" style="width: 50%">
+                            <img src="./imgs/call.png" class="img img-fluid mx-auto"/>
+                            <p style="font-weight: 400; font-size: 18px; text-align: center; margin-bottom: 0; margin-top: 1rem;">Set up a quick call:</p>
+                            <p style="font-weight: 700; font-size: 18px; text-align: center">+84 88 616 0880 / +84 88 636 0880</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container px-1 pb-1 pt-5">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-4 justify-content-between">
+                        <div>
+                            <img src="./imgs/logo.png" style="width: auto !important;height: 150px !important;">
+                        </div>
+                        <div class="mt-2">
+                            <img src="./imgs/linkedin_icon.png" style="width: auto !important;height: 32px !important;">
+                            <img src="./imgs/twitter_icon.png" style="width: auto !important;height: 26px !important;margin-left: 0.3rem;">
+                            <img src="./imgs/facebook_icon.png" style="width: auto !important;height: 28px !important;margin-left: 0.3rem;">
+                            <img src="./imgs/youtube_icon.png" style="width: auto !important;height: 32px !important;margin-left: 0.3rem;">
+                            <img src="./imgs/instagram_icon.png" style="width: auto !important;height: 32px !important;margin-left: 0.3rem;">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 justify-content-between">
+                        <div class="my-5">
+                            <div class="mt-2"><img src="./imgs/mail_footer.png" style="width: auto !important;height: 16px !important;display: inline-block;" class="img-fluid img o_we_custom_image"> <span class="ms-2"><a href="mailto:odoo@bachasoftware.com" target="_blank" rel="noreferrer">odoo@bachasoftware.com</a></span></div>
+                            <div class="mt-2"><img src="./imgs/skype_footer.png" style="width: auto !important;height: 20px !important;display: inline-block;" class="img-fluid img o_we_custom_image"> <span class="ms-2">bachasoftware</span></div>
+                            <div class="mt-2"><img src="./imgs/whatsapp_icon.png" style="width: auto !important;height: 23px !important;display: inline-block;" class="img-fluid img o_we_custom_image"> <span class="ms-2">+84 88 616 0880/ +84 88 636 0880</span></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 justify-content-between">
+                        <div class="row text-center">
+                            <div class="col-md-4 my-1"><img src="./imgs/Implementation_icon.png" style="width: auto !important;height: 50px !important;" class="img-fluid img o_we_custom_image"> <div class="text-center">Odoo Implementation</div></div>
+                            <div class="col-md-4 my-1"><img src="./imgs/Customization_icon.png" style="width: auto !important;height: 50px !important;" class="img-fluid img o_we_custom_image"> <div class="text-center">Odoo Customization</div></div>
+                            <div class="col-md-4 my-1"><img src="./imgs/Development_icon.png" style="width: auto !important;height: 50px !important;" class="img-fluid img o_we_custom_image"> <div class="text-center">Odoo Development</div></div>
+                            <div class="col-md-4 my-1"><img src="./imgs/Training_icon.png" style="width: auto !important;height: 50px !important;" class="img-fluid img o_we_custom_image"> <div class="text-center">Odoo Training</div></div>
+                            <div class="col-md-4 my-1"><img src="./imgs/Migration_icon.png" style="width: auto !important;height: 50px !important;" class="img-fluid img o_we_custom_image"> <div class="text-center">Odoo Migration</div></div>
+                            <div class="col-md-4 my-1"><img src="./imgs/Support_icon.png" style="width: auto !important;height: 50px !important;" class="img-fluid img o_we_custom_image"> <div class="text-center">Odoo Support</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="bhs_mass_mailing.bh_mailing_blacklist_domain_menu" model="ir.ui.menu">
+        <field name="sequence">2</field>
+        <field name="parent_id" ref="bhs_integration_hubspot.menu_bhs_hubspot_synchronize"/>
+    </record>
+    <record id="mass_mailing.mail_blacklist_mm_menu" model="ir.ui.menu">
+        <field name="sequence">3</field>
+        <field name="parent_id" ref="bhs_integration_hubspot.menu_bhs_hubspot_synchronize"/>
+    </record>
+    <record id="bhs_mass_mailing.bh_clean_blacllist_in_contact_list_menu" model="ir.ui.menu">
+        <field name="sequence">4</field>
+        <field name="parent_id" ref="bhs_integration_hubspot.menu_bhs_hubspot_synchronize"/>
+    </record>
+    <record id="bhs_mass_mailing.menu_bhs_mailing_contacted" model="ir.ui.menu">
+        <field name="sequence">5</field>
+        <field name="parent_id" ref="bhs_integration_hubspot.menu_bhs_hubspot_synchronize"/>
+    </record>
+</odoo>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!--  MAILING !-->
+        <record model="ir.ui.view" id="bhs_mailing_contact_view_form_inherited">
+            <field name="name">bhs.mailing.contact.view.form.inherited</field>
+            <field name="inherit_id" ref="mass_mailing.mailing_contact_view_form"/>
+            <field name="mode">extension</field>
+            <field name="model">mailing.contact</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='country_id']" position="after">
+                    <field name="state_name"/>
+                </xpath>
+                <xpath expr="//field[@name='message_bounce']" position="after">
+                    <field name="industry_name" force_save="1"/>
+                    <field name="hubspot_company_related" options="{'no_create':True}" readonly="1" force_save="1"/>
+                    <field name="linkedIn_URL" widget="url" readonly="1" force_save="1"/>
+                </xpath>
+
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="bhs_mailing_contact_view_tree_inherited">
+            <field name="name">bhs.mailing.contact.view.tree.inherited</field>
+            <field name="inherit_id" ref="mass_mailing.mailing_contact_view_tree"/>
+            <field name="mode">extension</field>
+            <field name="model">mailing.contact</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='country_id']" position="after">
+                    <field name="state_name" optional="hide"/>
+                    <field name="industry_name" optional="hide"/>
+                    <field name="linkedIn_URL"  widget="url" optional="hide"/>
+                </xpath>
+
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="bhs_mailing_list_view_tree_inherited">
+            <field name="name">bhs.mailing.list.view.tree.inherited</field>
+            <field name="inherit_id" ref="mass_mailing.mailing_list_view_tree"/>
+            <field name="mode">extension</field>
+            <field name="model">mailing.list</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="before">
+                    <field name="id_list_hubspot" optional="hide"/>
+                </xpath>
+            </field>
+        </record>
+</odoo>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="1">
+        <record id="ir_cron_hubspot_companies_odoo" model="ir.cron">
+            <field name="name">Hubspot: Companies Daily</field>
+            <field name="model_id" ref="bhs_integration_hubspot.model_hubspot_companies"/>
+            <field name="state">code</field>
+            <field name="code">model.sync_companies_hubspot_odoo_daily(1)</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="nextcall" eval="DateTime.now().replace(hour=17, minute=0)"/>
+        </record>
+
+<!--        SYN ALL COMPANIES-->
+        <record id="ir_cron_hubspot_companies" model="ir.cron">
+            <field name="name">Hubspot: All Companies</field>
+            <field name="model_id" ref="bhs_integration_hubspot.model_hubspot_companies"/>
+            <field name="state">code</field>
+            <field name="code">model.sync_companies_hubspot_odoo()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="nextcall" eval="DateTime.now().replace(hour=17, minute=0)"/>
+            <field name="active">False</field>
+        </record>
+    </data>
+</odoo>
